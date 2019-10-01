@@ -56,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
 
 
+        //Se o requestCode for REQUEST_RESULTADO E O ResultCode for RESULT_OK
              if (requestCode == ResultConstants.REQUEST_RESULTADO && resultCode == RESULT_OK) {
                  TextView txtResultado = (TextView) findViewById(R.id.txtResultado);
 
