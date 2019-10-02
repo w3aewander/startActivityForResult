@@ -60,7 +60,11 @@ public class MainActivity extends AppCompatActivity {
              if (requestCode == ResultConstants.REQUEST_RESULTADO && resultCode == RESULT_OK) {
                  TextView txtResultado = (TextView) findViewById(R.id.txtResultado);
 
-                 txtResultado.setText(String.valueOf(data.getDoubleExtra("resultado", 0)));
+                 txtResultado.setText(
+                         String.valueOf(data.getDoubleExtra(
+                         "resultado",
+                         0))
+                 );
              }
 
          }
